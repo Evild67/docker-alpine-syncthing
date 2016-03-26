@@ -1,0 +1,5 @@
+#!/usr/bin/with-contenv sh
+
+mkdir -p /srv/config
+mkdir -p /srv/data
+mkdir -p /srv/syncthing

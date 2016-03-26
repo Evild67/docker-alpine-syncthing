@@ -1,0 +1,3 @@
+#!/usr/bin/with-contenv sh
+
+exec syncthing -home=/srv/config -gui-address="0.0.0.0:$SYNCTHING_GUI_PORT" -no-browser -no-restart
