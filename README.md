@@ -21,12 +21,19 @@ docker run -p 8080:8080 -p 22000:22000 -p 21025:21025/udp --name syncthing evild
 You can also add a volume to ```/srv/config```
 
 ```
-docker run -p 8080:8080 -p 22000:22000 -p 21025:21025/udp -v /srv/docker/syncthing/config:/srv/config --name syncthing evild/alpine-syncthing
+docker run -p 8080:8080 -p 22000:22000 -p 21025:21025/udp \
+  -v /srv/docker/syncthing/config:/srv/config \
+  --name syncthing \
+  evild/alpine-syncthing
 ```
 
 ## How to add my data ?
 It's easy, just add a volume to ```/srv/data/```
 
 ```
-docker run -p 8080:8080 -p 22000:22000 -p 21025:21025/udp -v /srv/docker/syncthing/config:/srv/config -v /folder/to/my/data:/srv/data/foldername --name syncthing evild/alpine-syncthing
+docker run -p 8080:8080 -p 22000:22000 -p 21025:21025/udp \
+  -v /srv/docker/syncthing/config:/srv/config \
+  -v /folder/to/my/data:/srv/data/foldername \
+  --name syncthing \
+  evild/alpine-syncthing
 ```
