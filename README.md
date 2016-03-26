@@ -13,5 +13,5 @@ This image is based on [evild/alpine-base](https://hub.docker.com/r/evild/alpine
 ## How to use this image
 
 ```
-docker run -p 8080:8080 -p 22000:22000 -p 21025:21025/udp --name syncthing alpine-syncthing
+docker run -p 8080:8080 -p 22000:22000 -p 21025:21025/udp --name syncthing evild/alpine-syncthing
 ```
